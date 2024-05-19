@@ -1,0 +1,13 @@
+﻿csk_Id,vullink,actual_price,discounted_price,discount,category,sub_category,severity
+CSK-1,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=1,10,8,20,Men,Topwear,Low
+CSK-2,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=2,10,8,20,Men,Topwear,Low
+CSK-3,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=3,10,8,20,Men,Bottomwear,Low
+CSK-4,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=4,10,8,20,Men,Bottomwear,Medium
+CSK-5,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=5,10,8,20,Men,Bottomwear,Medium
+CSK-6,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=6,10,8,20,Men,Bottomwear,Medium
+CSK-7,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=7,10,8,20,Women,Bottomwear,High
+CSK-8,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=8,10,8,20,Women,Bottomwear,High
+CSK-9,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=9,10,8,20,Women,Topwear,High
+CSK-10,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=10,10,8,20,Women,Topwear,High
+CSK-1,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=1,10,8,20,Men,Topwear,Low
+CSK-1,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=1,10,8,20,Men,Topwear,High

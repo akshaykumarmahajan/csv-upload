@@ -1,0 +1,12 @@
+﻿name,vullink,actual_price,discounted_price,discount,category,sub_category,brand
+T Shirt,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=1,10,8,20,Men,Topwear,Nike
+Shirt,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=2,10,8,20,Men,Topwear,Nike
+Paint,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=3,10,8,20,Men,Bottomwear,Nike
+Lower,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=4,10,8,20,Men,Bottomwear,Nike
+Jogger,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=5,10,8,20,Men,Bottomwear,Nike
+Boxer,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=6,10,8,20,Men,Bottomwear,Nike
+Cargo,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=7,10,8,20,Women,Bottomwear,Addidas
+Touser,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=8,10,8,20,Women,Bottomwear,Addidas
+T Shirt Half,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=9,10,8,20,Women,Topwear,Addidas
+T Shirt Full,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=10,10,8,20,Women,Topwear,Addidas
+Cargo,http://abc.com/controller/page.aspx?scanId=19116699&projectId=259&pathid=1,10,8,20,Men,Topwear,Nike
