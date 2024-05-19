@@ -10,24 +10,30 @@ let mandatory_header = [
   "discount",
   "category",
   "sub_category",
-  "brand",
+  "bran",
 ];
+
+async function compareHeaders(data) {
+  console.log("abc", JSON.stringify(mandatory_header) === JSON.stringify(data));
+  return JSON.stringify(mandatory_header) === JSON.stringify(data);
+}
 
 exports.importProductData = async (req, res) => {
   try {
     const allowedExtension = /(\.csv)$/i;
     if (allowedExtension.exec(path.extname(req.file.originalname))) {
-      const jsonArray = csv()
-        .fromFile(req.file.path)
-        .then((response) => {
-          console.log("res", response);
-        });
-
-      const header = csv()
-        .fromString(req.file.path)
-        .then(function (jsonArray) {
-          console.log("hhh", jsonArray);
-        });
+      const jsonObj = await csv().fromFile(req.file.path);
+      const csvHeader = Object.keys(jsonObj[0]);
+      const result = compareHeaders(csvHeader);
+      console.log(result, "result");
+      if (result) {
+        console.log(1);
+        //get unique and insert to DB
+      } else {
+        console.log(2);
+        res.status(400);
+        res.send({ status: "failed", message: "CSV Header is not matching" });
+      }
     } else {
       fs.unlink(req.file.path, (err) => {
         console.log("file deleted successfully");
