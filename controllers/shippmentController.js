@@ -1,3 +1,5 @@
+const log4js = require("log4js");
+const logger = log4js.getLogger('app');
 const path = require("path");
 const fs = require("fs");
 const csv = require("csvtojson");
@@ -14,20 +16,22 @@ let mandatory_header = [
 ];
 
 exports.importShippmentData = async (req, res) => {
+  logger.info("Inside shippment")
   try {
     const allowedExtension = /(\.csv)$/i;
     if (allowedExtension.exec(path.extname(req.file.originalname))) {
-      const jsonArray = csv()
-        .fromFile(req.file.path)
-        .then((response) => {
-          console.log("res", response);
-        });
+      csv()
+      .fromFile(req.file.path)
+      .then(async (response) =>{
+        console.log("befor filter", response, response.length)
 
-      const header = csv()
-        .fromString(req.file.path)
-        .then(function (jsonArray) {
-          console.log("hhh", jsonArray);
-        });
+        let uniqueData = response.filter((e,i)=>{
+          return response.findIndex((x)=>{
+            return x.csk_Id == e.csk_Id && x.severity == e.severity;
+          }) == i
+        })
+        console.log("after filter", uniqueData, uniqueData.length)
+      })
     } else {
       fs.unlink(req.file.path, (err) => {
         console.log("file deleted successfully");
